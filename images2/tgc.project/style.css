@@ -1,0 +1,152 @@
+*{
+    margin:0%;
+    padding: 0%;
+box-sizing: border-box;
+}
+header{
+background-color: skyblue;
+color: white;
+display: flex;
+justify-content:space-between;
+padding: 0 5%;
+height: 70px;
+
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    align-items: center;
+    height: 100%;
+}
+button a{
+font-size: 18px;
+
+padding-top: 15px;
+}
+button a:hover{
+color: green;
+margin-top: 15px;
+
+}
+header li a{
+     color: rgb(0, 0, 0);
+}
+header li a:hover{
+    color:rgb(255, 255, 255)
+}.logo img{ 
+    width: 110px; 
+}
+.btn{
+    background-color: #2be259;
+
+}
+button a{
+   text-decoration: none;
+   background-color: #2be259;
+   color: white;
+}
+.services .big1{
+    background-color: black;
+    color: #ffffff;
+    height: 300px; 
+}
+.services2{
+background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+padding: 40px 0;
+}
+.services2 > h2 { 
+    text-align: center;
+
+}
+.services2 .container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.services2 .container1 .child1{
+    background-color: #18171713;
+    transition: 2s ease all;
+
+}
+.services2 .child1:hover {
+transform: scale(1.1);
+
+
+}
+.services3{
+    margin-top: 3px;
+    padding-bottom: 6px;
+    background-color: #0000008e;
+}
+.heading1{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+.services2 .child1-text{
+    text-align: center;
+}
+.services2 .child1{
+    align-items: center;
+}
+.services2 .image1{
+    align-items: center;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .services2 .container1,
+    .services3 .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .child1 {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-btn .btn {
+        padding: 10px;
+    }
+
+    .services,
+    .services2,
+    .services3 {
+        padding: 10px;
+    }
+
+    .child1 {
+        padding: 10px;
+    }
+}
